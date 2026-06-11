@@ -13,5 +13,7 @@ int sum(int N){
 
 int main(){
     cout << "Sum of 5 no. is " << sum(5) << endl;
+    cout << "Sum of 10 no. is " << sum(10) << endl;
     return 0;
+    
 }
