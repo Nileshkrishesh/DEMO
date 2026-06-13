@@ -1,25 +1,36 @@
 #include <iostream>
 using namespace std;
-int dtb(int n){
-    int rem=0,digit;
-    while(n>0){
-        digit=n%8;
-        rem=rem*10+digit;
-        n=n/8;
-
+void sum(int a[],int n){
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum+=a[i];
     }
-    return rem;
+    cout<<"Sum Of All the Element of Array is : ";
+    cout<<sum<<endl;
+}void mul(int a[],int n){
+    int mul=1;
+    for(int i=0;i<n;i++){
+        mul*=a[i];
+    }
+    cout<<"Multiply Of All the Element of Array is : ";
+    cout<<mul;
 }
-int reverse(int rem){
-    int rem1=0,digit;
-    while(rem>0){
-        digit=rem%10;
-        rem1=rem1*10+digit;
-        rem1=rem1/10;
-}
-    return rem1
-}
+
 int main(){
-    dtb;
+    int n;
+    cout<<"Enter The Size of An Array : ";
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    cout<<"Array: ";
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
+    sum(a,n);
+    mul(a,n);
     return 0;
+
 }
