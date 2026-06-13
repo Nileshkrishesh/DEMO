@@ -39,13 +39,13 @@ int main() {
         cin >> a[i];
     }
 
-    int max1 = a[0],maxi;
+    int mini = a[0],mint;
 
     for (int i = 1; i < n; i++) {
-        maxi=max(a[i],max1);
+        mint= min(a[i],mini);
     }
 
-    cout << "max="<<maxi;
+    cout << "min="<<mint;
 
     return 0;
 }
